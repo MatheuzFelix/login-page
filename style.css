@@ -18,16 +18,28 @@
     --blue: #1B77F3;
     --red: #CF3C3F;
 }
+main{
+    display: flex;
+}
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 500px;
-    min-height: 100vh;
+    overflow-y: hidden;
+    justify-content: space-between;
+    max-width: 450px;
+    min-height: 50vh;
     padding: clamp(35px, 8%, 70px);
+}
 
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .login__logo {
@@ -137,7 +149,6 @@
 
 .input--checkbox:checked{
     background-color: var(--red);
-    
 }
 
 .input--checkbox:checked::after {
@@ -186,4 +197,12 @@
     text-transform: uppercase;
     margin-bottom: 5px;
     font-weight: 700;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url(./img/Fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
 }
