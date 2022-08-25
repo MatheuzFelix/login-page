@@ -15,7 +15,7 @@ const handleFocusOut = ({ target }) => {
 }
 
 const handleChange = () => {
-    const [username, password] = inputs;
+    const [username, password, confpass] = inputs;
 
     if (username.value && password.value.length >= 8) {
         button.removeAttribute('disabled')
@@ -27,3 +27,9 @@ const handleChange = () => {
 inputs.forEach((input) => input.addEventListener('focus', handleFocus));
 inputs.forEach((input) => input.addEventListener('focusout', handleFocusOut));
 inputs.forEach((input) => input.addEventListener('input', handleChange));
+
+function entrar(){
+    let usuario = document.querySelector('#username')
+
+    let senha = document.querySelector('#password')
+}
