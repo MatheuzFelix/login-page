@@ -21,7 +21,7 @@ let msgerro = document.querySelector('#msgerro')
 let msgsucesso = document.querySelector('#msgsucesso')
 
 name.addEventListener('keyup', () => {
-    if (name.value.length <= 2){
+    if (name.value.length <= 8){
         labelname.setAttribute('style', 'color: red')
         labelname.innerHTML = 'Nome *nome invalido'
         name.setAttribute('style', 'border-color: red')
@@ -35,7 +35,7 @@ name.addEventListener('keyup', () => {
 })
 
 usuario.addEventListener('keyup', () => {
-    if (usuario.value.length <= 2){
+    if (usuario.value.length < 8){
         labelusuario.setAttribute('style', 'color: red')
         labelusuario.innerHTML = 'usuario *Usuario invalido'
         usuario.setAttribute('style', 'border-color: red')
@@ -49,7 +49,7 @@ usuario.addEventListener('keyup', () => {
 })
 
 senha.addEventListener('keyup', () => {
-    if (senha.value.length <= 2){
+    if (senha.value.length < 8){
         labelsenha.setAttribute('style', 'color: red')
         labelsenha.innerHTML = 'senha *senha invalido'
         senha.setAttribute('style', 'border-color: red')
