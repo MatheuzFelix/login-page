@@ -56,12 +56,12 @@ function entrar(){
     if(usuario.value == userValid.user && senha.value == userValid.senha){
         msgerro.setAttribute('style', 'display: none')
         msgerro.innerHTML = ''
-        window.location.href = '../page_painel/Painel.html'
+        setTimeout(() => {
+            window.location.href = '../page_painel/Painel.html'
+        },2000)
     }else{
         msgerro.setAttribute('style', 'display: block')
         msgerro.innerHTML = 'usuario ou senha invalido'
         usuario.focus()
     }
-
-
 }

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff80;
+    padding: 30px;
+    margin-top: 300px;
+    box-shadow: 4px 4px 1px 0px #ffffff60;
+}
+body {
+    background-image: url(../img/PainelFundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
