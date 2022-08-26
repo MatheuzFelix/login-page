@@ -57,7 +57,7 @@ function entrar(){
         msgerro.setAttribute('style', 'display: none')
         msgerro.innerHTML = ''
         setTimeout(() => {
-            window.location.href = '../page_painel/Painel.html'
+            window.location.href = './pagepainel/Painel.html'
         },2000)
     }else{
         msgerro.setAttribute('style', 'display: block')
