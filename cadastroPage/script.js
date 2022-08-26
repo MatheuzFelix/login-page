@@ -98,7 +98,7 @@ function cadastrar() {
         msgerro.innerHTML = ''
 
         setTimeout(() => {
-            window.location.href = 'http://127.0.0.1:5500/Index.html'
+            window.location.href = '../Index.html'
         },3000)
 
     }else{
