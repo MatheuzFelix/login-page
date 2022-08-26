@@ -71,7 +71,9 @@ h1 {
     transition: al .3s ease-out;
 }
 
-.label-float input:focus + label {
+.label-float input:focus + label,
+.label-float input:valid + label
+ {
     font-size: 13px;
     margin-top: 0;
     color: #4038a0;
@@ -88,6 +90,7 @@ h1 {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+
 }
 
 .login__button svg {
@@ -102,4 +105,22 @@ h1 {
 }
 .login__button:disabled svg {
     fill: grey;
+}
+
+#msgerro {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgsucesso {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
 }
